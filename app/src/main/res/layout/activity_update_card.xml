@@ -23,12 +23,14 @@
         android:id="@+id/create_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter task"
-        android:layout_marginTop="20dp"
+        android:hint="Enter Task"
+        android:layout_marginTop="30dp"
         android:padding="15dp"
-        android:background="@drawable/custom_edittext"
-        android:textColorHint="#BFBBBD"
-        android:textColor="@color/white" />
+        android:background="@drawable/custom_edittetext"
+        android:textColorHint="#BFBBBB"
+        android:textColor="@color/white"
+        />
+
     <EditText
         android:id="@+id/create_priority"
         android:layout_width="match_parent"
@@ -36,31 +38,33 @@
         android:layout_marginTop="20dp"
         android:hint="Priority"
         android:padding="15dp"
-        android:background="@drawable/custom_edittext"
-        android:textColorHint="@color/white"
-        android:textColor="@color/white" />
-
-    <View
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_weight="1" />
-
-    <Button
-        android:id="@+id/delete_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#FF5722"
-        android:text="Delete"/>
-
-    <Button
-        android:id="@+id/update_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#FF5722"
-        android:text="Update"/>
+        android:background="@drawable/custom_edittetext"
+        android:textColorHint="#BFBBBB"
+        android:textColor="@color/white"
+        />
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp">
+        <Button
+            android:id="@+id/update_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/delete_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF5722"
+            android:text="Delete"/>
+    </LinearLayout>
 
 </LinearLayout>
